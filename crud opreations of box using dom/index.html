@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <style>
+        #box {
+            height: 300px;
+            width: 400px;
+            background-color: red;
+            border: solid 3px black;
+            visibility: hidden;
+        }
+    </style>
+
+    <div id="box"></div>
+    <button onclick="Show()">Show</button>
+    <button onclick="Changecolor()">Changecolor</button>
+    <button onclick="Changesize()">Changesize</button>
+    <button onclick="Delete()">Delete</button>
+
+    <script>
+
+        const Show = () => {
+            let showw = document.getElementById('box')
+            showw.style.visibility = "visible";
+        }
+
+        const Changecolor = () => {
+            let showw = document.getElementById('box')
+            showw.style.backgroundColor = "blue";
+        }
+
+        const Changesize = () => {
+            let showw = document.getElementById('box')
+            showw.style.height = '400px', width = '500px'
+        }
+        const Delete = () => {
+            let showw = document.getElementById('box')
+            document.body.removeChild(box);
+        }
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
